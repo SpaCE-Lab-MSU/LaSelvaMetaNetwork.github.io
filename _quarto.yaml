@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+  
+  
+website: 
+  title: "The La Selva-Barva MetaNetwork"
+  site-url: https://space-lab-msu.github.io/LaSelva-MetaNetwork/
+  navbar:
+    left: 
+      - href: index.qmd
+        text: Home
+      - href: species.qmd
+        text: "Species"
+        
+format:
+  html:
+    theme:
+      - lux
+      
