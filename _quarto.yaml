@@ -10,8 +10,10 @@ website:
     left: 
       - href: index.qmd
         text: Home
-      - href: species.qmd
-        text: "Species"
+      - text: "Species"
+        menu: 
+          - href: plants.qmd
+            text: 'Plants'
         
 format:
   html:
