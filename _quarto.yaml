@@ -21,4 +21,5 @@ format:
   html:
     theme:
       - lux
+    css: styles.css
       
