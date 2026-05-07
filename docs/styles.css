@@ -1,3 +1,13 @@
+.quarto-container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.content {
+  max-width: 100% !important;
+}
+
+
 .fade-in {
   animation: fadeIn 1.5s ease forwards;
 }
