@@ -1,5 +1,5 @@
 ---
-title: "Mammals"
+title: "Arthropods"
 format: 
   html:
     css: styles.css
@@ -12,7 +12,7 @@ format:
 
 library(dplyr); library(knitr); library(kableExtra); library(DT)
 
-sp_list <- read.csv(here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/mammal_sp_list.csv"))
+sp_list <- read.csv(here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/arthropod_sp_list.csv"))
 
 df <- sp_list %>%
   arrange(order, family, species) %>%

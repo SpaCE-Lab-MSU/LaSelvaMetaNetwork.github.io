@@ -16,6 +16,10 @@ website:
             text: 'Plants'
           - href: mammals.qmd
             text: 'Mammals'
+          - href: birds.qmd
+            text: 'Birds'
+          - href: arthropods.qmd
+            text: 'Arthropods'
         
 format:
   html:

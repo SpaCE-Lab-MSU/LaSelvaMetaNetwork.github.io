@@ -61,4 +61,8 @@ ggplot() +
     legend.key.spacing.y = unit(0.1, "cm")
   )
 ```
+:::
 
+::: {style="text-align:center"}
+## The MetaNetwork
+:::

@@ -1,5 +1,35 @@
 ---
 title: "Plants"
-format: html
+format: 
+  html:
+    css: styles.css
 ---
 
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(dplyr); library(knitr); library(kableExtra); library(DT)
+
+sp_list <- read.csv(here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/plant_sp_list.csv"))
+
+df <- sp_list %>%
+  arrange(order, family, species) %>%
+  distinct(order, family, species)
+
+datatable(
+  df,
+  rownames = FALSE,
+  filter = "top",
+  extensions = "RowGroup",
+  options = list(
+    pageLength = 50,
+    rowGroup = list(dataSrc = 0),  # group by first column (order)
+    columnDefs = list(
+      list(visible = FALSE, targets = 0) # hide order column
+    )
+  )
+)
+
+```
