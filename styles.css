@@ -7,6 +7,10 @@
   max-width: 100% !important;
 }
 
+main {
+  max-width: 100% !important;
+}
+
 
 .fade-in {
   animation: fadeIn 1.5s ease forwards;
