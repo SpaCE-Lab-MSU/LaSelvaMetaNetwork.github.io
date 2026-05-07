@@ -8,18 +8,20 @@ format: html
 #| warning: false
 #| message: false
 
+library(dplyr); library(knitr); library(kableExtra)
+
 sp_list <- read.csv(here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/mammal_sp_list.csv"))
 
-library(knitr); library(dplyr); library(kableExtra)
-
-sp_list %>%
+df <- sp_list %>%
   arrange(order, family, species) %>%
-  distinct(order, family, species) %>%
-  knitr::kable(format = "html") %>%
-  kableExtra::kable_styling(
-    bootstrap_options = "none",
-    full_width = FALSE
-  ) %>%
-  kableExtra::collapse_rows(columns = 1:2)
+  distinct(order, family, species)
+
+index_order <- table(df$order)
+
+names(index_order) <- paste0(names(index_order)
+)
+
+kable(df[, 1:3], escape = FALSE, booktabs = TRUE) %>%
+  pack_rows(index = index_order) 
 
 ```

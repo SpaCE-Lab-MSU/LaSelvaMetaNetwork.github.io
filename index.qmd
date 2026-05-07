@@ -3,3 +3,16 @@ title: "The La Selva-Barva MetaNetwork"
 format: html
 ---
 
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(sf); library(ggplot2)
+
+VB <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/VB.shp"))
+
+ggplot()+
+  geom_sf(data=VB)+
+  theme_minimal()
+```
