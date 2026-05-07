@@ -1,18 +1,61 @@
 ---
 title: "The La Selva-Barva MetaNetwork"
-format: html
+format: 
+  html:
+    css: styles.css
 ---
+
+::: {style="text-align:center"}
+Understanding tropical forest communities through species interactions
+:::
+
+::: {.columns .v-center}
+
+::: {.column width="40%" .fade-in}
+
+## The La Selva-Volcán Barva Transect
+
+As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient provides **one of the best sources of ecological data in the tropics.**
+
+:::
+
+::: {.column width="60%" .fade-in}
 
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
+#| fig-width: 7
+#| fig-height: 5
 
-library(sf); library(ggplot2)
+library(sf)
+library(ggplot2)
 
-VB <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/VB.shp"))
+VB <- st_read(
+  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/VB.shp"),
+  quiet = TRUE
+)
 
-ggplot()+
-  geom_sf(data=VB)+
-  theme_minimal()
+la_selva <- st_read(
+  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/la_selva.shp"),
+  quiet = TRUE
+)
+
+ggplot() +
+  geom_sf(data = VB, aes(fill = ID)) +
+  geom_sf(data = la_selva, aes(fill = NAME)) +
+  scale_fill_manual(
+    values = c("gray80", "gray90"),
+    labels = c(
+      "La Selva Biological Station",
+      "Braulio Carrillo National Park"
+    )
+  ) +
+  labs(fill = "") +
+  theme_void() +
+  theme(
+    legend.text = element_text(size = 12),
+    legend.key.spacing.y = unit(0.1, "cm")
+  )
 ```
+

@@ -1,8 +1,13 @@
-table.table-striped tbody tr:nth-of-type(odd),
-table.table-striped tbody tr:nth-of-type(even) {
-  background-color: transparent !important;
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
 }
 
-table tbody tr {
-  background-color: transparent !important;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
