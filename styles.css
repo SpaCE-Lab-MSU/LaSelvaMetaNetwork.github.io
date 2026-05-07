@@ -1,3 +1,7 @@
+b, strong {
+    font-weight: bold !important;
+}
+
 .quarto-container {
   max-width: 100% !important;
   width: 100% !important;
@@ -25,3 +29,4 @@ main {
     opacity: 1;
   }
 }
+
