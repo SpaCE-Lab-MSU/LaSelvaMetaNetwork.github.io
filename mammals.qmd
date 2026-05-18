@@ -3,6 +3,7 @@ title: "Mammals"
 format: 
   html:
     css: styles.css
+    page-layout: full
 ---
 
 ```{r}

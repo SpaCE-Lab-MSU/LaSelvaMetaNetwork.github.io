@@ -3,6 +3,7 @@ title: "Plants"
 format: 
   html:
     css: styles.css
+    page-layout: full
 ---
 
 ```{r}

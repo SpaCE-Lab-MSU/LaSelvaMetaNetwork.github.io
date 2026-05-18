@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/plants.html</loc>
-    <lastmod>2026-05-18T19:52:23.428Z</lastmod>
+    <lastmod>2026-05-18T19:55:54.496Z</lastmod>
   </url>
   <url>
     <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/mammals.html</loc>
@@ -18,11 +18,11 @@
   </url>
   <url>
     <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/birds.html</loc>
-    <lastmod>2026-05-18T15:45:57.398Z</lastmod>
+    <lastmod>2026-05-18T20:01:03.500Z</lastmod>
   </url>
   <url>
     <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/arthropods.html</loc>
-    <lastmod>2026-05-18T15:46:21.173Z</lastmod>
+    <lastmod>2026-05-18T20:01:00.942Z</lastmod>
   </url>
   <url>
     <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/species_template.html</loc>
@@ -523,5 +523,17 @@
   <url>
     <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/species/Aglaonema_commutatum.html</loc>
     <lastmod>2026-05-18T19:52:29.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/species/Alocasia_cucullata.html</loc>
+    <lastmod>2026-05-18T19:56:01.109Z</lastmod>
+  </url>
+  <url>
+    <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/species/Achroblatta_luteola.html</loc>
+    <lastmod>2026-05-18T20:01:08.285Z</lastmod>
+  </url>
+  <url>
+    <loc>https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/species/Archimandrita_tessellata.html</loc>
+    <lastmod>2026-05-18T20:01:08.287Z</lastmod>
   </url>
 </urlset>
