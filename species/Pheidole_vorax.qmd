@@ -1,0 +1,14 @@
+---
+title: "Pheidole vorax"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("arthropod","Pheidole vorax")
+```
