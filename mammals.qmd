@@ -10,16 +10,50 @@ format:
 #| warning: false
 #| message: false
 
-library(dplyr); library(knitr); library(kableExtra); library(DT)
+library(tidyverse); library(dplyr); library(knitr); library(kableExtra); library(DT); library(glue)
 
-sp_list <- read.csv(here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/mammal_sp_list.csv"))
+sp_list <- read_csv(
+  here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/mammal_sp_list.csv")
+)
+
+template <- readLines("templates/species_template.qmd")
+
+dir.create("species", showWarnings = FALSE)
+
+species <- unique(sp_list$species)
+
+for(sp in species){
+
+  sp_file <- gsub(" ", "_", sp)
+
+  content <- template |>
+    gsub("\\{\\{species\\}\\}", sp, x = _) |>
+    gsub("\\{\\{taxa\\}\\}", "mammal", x = _) |>
+    gsub("\\{\\{index_page\\}\\}", "mammals", x = _)
+
+  writeLines(
+    content,
+    file.path("species", paste0(sp_file, ".qmd"))
+  )
+}
 
 df <- sp_list %>%
   arrange(order, family, species) %>%
-  distinct(order, family, species)
+  distinct(order, family, species) %>%
+  mutate(
+    species_link = paste0(
+      "<a href='species/",
+      gsub(" ", "_", species),
+      ".html'>",
+      species,
+      "</a>"
+    )
+  ) %>%
+  select(order, family, species = species_link)
 
 datatable(
   df,
+  escape = FALSE,
   rownames = FALSE,
   filter = "top",
   extensions = "RowGroup",

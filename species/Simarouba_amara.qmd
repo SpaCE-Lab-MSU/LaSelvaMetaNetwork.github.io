@@ -1,0 +1,14 @@
+---
+title: "Simarouba amara"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("plant","Simarouba amara")
+```

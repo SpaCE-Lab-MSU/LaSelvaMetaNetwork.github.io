@@ -1,0 +1,14 @@
+---
+title: "Jacaranda mimosifolia"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("plant","Jacaranda mimosifolia")
+```

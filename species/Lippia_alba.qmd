@@ -1,0 +1,14 @@
+---
+title: "Lippia alba"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("plant","Lippia alba")
+```

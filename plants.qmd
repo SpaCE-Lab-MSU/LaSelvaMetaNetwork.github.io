@@ -14,12 +14,44 @@ library(dplyr); library(knitr); library(kableExtra); library(DT)
 
 sp_list <- read.csv(here::here("../LaSelva-MetaNetwork-data/data/L1/L1_harmonized_names/plant_sp_list.csv"))
 
+template <- readLines("templates/species_template.qmd")
+
+dir.create("species", showWarnings = FALSE)
+
+species <- unique(sp_list$species)
+
+for(sp in species){
+
+  sp_file <- gsub(" ", "_", sp)
+
+  content <- template |>
+    gsub("\\{\\{species\\}\\}", sp, x = _) |>
+    gsub("\\{\\{taxa\\}\\}", "plant", x = _) |>
+    gsub("\\{\\{index_page\\}\\}", "plants", x = _)
+
+  writeLines(
+    content,
+    file.path("species", paste0(sp_file, ".qmd"))
+  )
+}
+
 df <- sp_list %>%
   arrange(order, family, species) %>%
-  distinct(order, family, species)
+  distinct(order, family, species) %>%
+  mutate(
+    species_link = paste0(
+      "<a href='species/",
+      gsub(" ", "_", species),
+      ".html'>",
+      species,
+      "</a>"
+    )
+  ) %>%
+  select(order, family, species = species_link)
 
 datatable(
   df,
+  escape = FALSE,
   rownames = FALSE,
   filter = "top",
   extensions = "RowGroup",
