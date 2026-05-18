@@ -1,0 +1,14 @@
+---
+title: "Eucereon pilatii"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("arthropod","Eucereon pilatii")
+```
