@@ -1,0 +1,14 @@
+---
+title: "Tromba xanthura"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("arthropod","Tromba xanthura")
+```

@@ -1,0 +1,14 @@
+---
+title: "Thaumatomyrmex ferox"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("arthropod","Thaumatomyrmex ferox")
+```
