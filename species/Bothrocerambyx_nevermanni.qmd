@@ -1,0 +1,14 @@
+---
+title: "Bothrocerambyx nevermanni"
+format: html
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../code/mapping.R")
+
+create_map("arthropod","Bothrocerambyx nevermanni")
+```
