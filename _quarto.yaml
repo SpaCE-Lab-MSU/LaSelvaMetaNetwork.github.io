@@ -21,7 +21,7 @@ website:
           - href: arthropods.qmd
             text: 'Arthropods'
       - href: species_information.qmd
-        text: 'Species Information'
+        text: 'Explore Data'
         
 format:
   html:
