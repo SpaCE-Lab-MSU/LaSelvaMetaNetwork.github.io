@@ -10,7 +10,7 @@ website:
     left: 
       - href: index.qmd
         text: Home
-      - text: "Species"
+      - text: "Species Lists"
         menu: 
           - href: plants.qmd
             text: 'Plants'
@@ -20,8 +20,8 @@ website:
             text: 'Birds'
           - href: arthropods.qmd
             text: 'Arthropods'
-          - href: species_information.qmd
-            text: 'Species Information'
+      - href: species_information.qmd
+        text: 'Species Information'
         
 format:
   html:
