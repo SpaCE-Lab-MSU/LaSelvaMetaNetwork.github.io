@@ -103,5 +103,12 @@
     "title": "The La Selva-Barva MetaNetwork",
     "section": "Data Integration: The La Selva-Volcán Barva Transect",
     "text": "Data Integration: The La Selva-Volcán Barva Transect\nAs one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides one of the best sources of ecological data in the tropics."
+  },
+  {
+    "objectID": "species_information.html",
+    "href": "species_information.html",
+    "title": "Species Information",
+    "section": "",
+    "text": "Interactive Species Map\nSearch species and explore occurrence locations."
   }
 ]

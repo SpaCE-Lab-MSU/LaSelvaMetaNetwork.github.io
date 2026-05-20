@@ -1,0 +1,10 @@
+name: species_data
+title:
+username: jbaljunas
+account: jbaljunas
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17387932
+bundleId: 12018726
+url: https://jbaljunas.shinyapps.io/species_data/
+version: 1
