@@ -11,34 +11,50 @@ Understanding tropical forest communities through species interactions
 :::
 
 
-::: {.container-fluid}
+::: {style="text-align:center"}
+## Overview
+:::
 
-::: {.row}
+Biotic interactions among species are fundamental drivers of tropical biodiversity, affecting species’ distributions, community assembly, and ecosystem functions and services such as seed dispersal and pollination. The tropics have an especially large gap in spatiotemporal occurrence and interaction data, and therefore, compiling and synthesizing biotic interaction data is a critical step towards diligently tracking and predicting community change. This information is vital to identifying species and areas that are at especially high risk of climate change, guiding conservation and land management decisions. 
 
-::: {.col-12 .col-md-6}
+::: {.columns .v-center}
 
-## The La Selva–Volcán Barva Transect
+::: {.columns style="width:100%;"}
+
+::: {.column width="50%" .fade-in}
+
+
+## The La Selva-Volcán Barva Transect
 
 As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides **one of the best sources of ecological data in the tropics.**
 
 :::
 
-::: {.col-12 .col-md-6}
+::: {.column width="50%" .fade-in}
 
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-width: 6
-#| fig-height: 4.5
+#| fig-width: 7
+#| fig-height: 5
 
 library(sf); library(ggplot2); library(tidyverse)
 
-la_selva <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/la_selva.gpkg"), quiet = TRUE)
+la_selva <- st_read(
+  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/la_selva.gpkg"),
+  quiet = TRUE
+)
 
-VB <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/braulio_carrillo_np.gpkg"), quiet = TRUE)
+VB <- st_read(
+  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/braulio_carrillo_np.gpkg"),
+  quiet = TRUE
+)
 
-transect <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/transect.gpkg"), quiet = TRUE)
+transect <- st_read(
+  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/transect.gpkg"),
+  quiet = TRUE
+)
 
 transect <- transect %>%
   filter(tipo_acceso %in% c('sección fuera de trocha','transecto principal'))
@@ -47,17 +63,24 @@ transect <- transect %>%
 ggplot() +
   geom_sf(data = VB, aes(fill = nombre_asp), color = 'gray80') +
   geom_sf(data = la_selva, aes(fill = LANDUSE), color = 'gray80') +
-  geom_sf(data = transect, color = 'darkolivegreen1', linewidth = 1.2) +
+  geom_sf(data = transect, color = 'darkolivegreen1', linewidth = 2) +
   scale_fill_manual(
     values = c('gray95', 'gray90'),
-    labels = c("Braulio Carrillo National Park", "La Selva Biological Station")
-  ) +
+    labels = c("Braulio Carrillo National Park", "La Selva Biological Station")) +
   labs(fill = "") +
-  theme_void()
-```
+  theme_void() +
+  theme(
+    legend.text = element_text(size = 12),
+    legend.key.spacing.y = unit(0.1, "cm")
+  )
 
+```
 :::
 
 ::: {style="text-align:center"}
 ## The MetaNetwork
+:::
+
+A MetaNetwork includes both observed and potential interaction data that helps us understand how communities may be structured and function- more info coming soon!
+
 :::

@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "The La Selva-Barva MetaNetwork",
     "section": "",
-    "text": "Understanding tropical forest communities through species interactions"
+    "text": "Understanding tropical forest communities through species interactions\nBiotic interactions among species are fundamental drivers of tropical biodiversity, affecting species’ distributions, community assembly, and ecosystem functions and services such as seed dispersal and pollination. The tropics have an especially large gap in spatiotemporal occurrence and interaction data, and therefore, compiling and synthesizing biotic interaction data is a critical step towards diligently tracking and predicting community change. This information is vital to identifying species and areas that are at especially high risk of climate change, guiding conservation and land management decisions."
   },
   {
     "objectID": "index.html#understanding-tropical-forest-communities-through-species-interactions",
@@ -25,14 +25,14 @@
     "href": "index.html#section",
     "title": "The La Selva-Barva MetaNetwork",
     "section": "",
-    "text": ":: {style = “text-align:center”} ## Understanding tropical forest communities through species interactions\n\n\nYou can add more descriptive text here if you want."
+    "text": "::: ::: {style=“text-align:center”} ## Overview :::\nBiotic interactions among species are fundamental drivers of tropical biodiversity, affecting species’ distributions, community assembly, and ecosystem functions and services such as seed dispersal and pollination. The tropics have an especially large gap in spatiotemporal occurrence and interaction data, and therefore, compiling and synthesizing biotic interaction data is a critical step towards diligently tracking and predicting community change. This information is vital to identifying species and areas that are at especially high risk of climate change, guiding conservation and land management decisions."
   },
   {
     "objectID": "index.html#the-la-selva-volcán-barva-transect",
     "href": "index.html#the-la-selva-volcán-barva-transect",
     "title": "The La Selva-Barva MetaNetwork",
-    "section": "",
-    "text": "As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides one of the best sources of ecological data in the tropics."
+    "section": "The La Selva-Volcán Barva Transect",
+    "text": "The La Selva-Volcán Barva Transect\nAs one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides one of the best sources of ecological data in the tropics."
   },
   {
     "objectID": "index.html#tracking-community-change-along-the-la-selva-volcán-barva-transect",
@@ -124,5 +124,12 @@
     "title": "The La Selva-Barva MetaNetwork",
     "section": "The La Selva–Volcán Barva Transect",
     "text": "The La Selva–Volcán Barva Transect\nAs one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides one of the best sources of ecological data in the tropics."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "The La Selva-Barva MetaNetwork",
+    "section": "Overview",
+    "text": "Overview"
   }
 ]
