@@ -25,9 +25,9 @@ df <- sp_list %>%
   distinct(order, family, species, common_name) %>%
     mutate(
   species_link = paste0(
-    "<a href='https://jbaljunas.shinyapps.io/species_data/_w_61f50bf52a284c998f3a4a5c2f700c28/?species=",
+    "<a href='https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/species_information.html?species=",
     URLencode(species),
-    "' target='_blank'>",
+    "'>",
     species,
     "</a>"
   )
