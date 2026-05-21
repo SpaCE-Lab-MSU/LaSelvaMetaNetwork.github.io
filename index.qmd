@@ -11,43 +11,34 @@ Understanding tropical forest communities through species interactions
 :::
 
 
-::: {.columns .v-center}
+::: {.container-fluid}
 
-::: {.columns style="width:100%;"}
+::: {.row}
 
-::: {.column width="50%" .fade-in}
+::: {.col-12 .col-md-6}
 
-## The La Selva-Volcán Barva Transect
+## The La Selva–Volcán Barva Transect
 
 As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides **one of the best sources of ecological data in the tropics.**
 
 :::
 
-::: {.column width="50%" .fade-in}
+::: {.col-12 .col-md-6}
 
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-width: 7
-#| fig-height: 5
+#| fig-width: 6
+#| fig-height: 4.5
 
 library(sf); library(ggplot2); library(tidyverse)
 
-la_selva <- st_read(
-  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/la_selva.gpkg"),
-  quiet = TRUE
-)
+la_selva <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/la_selva.gpkg"), quiet = TRUE)
 
-VB <- st_read(
-  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/braulio_carrillo_np.gpkg"),
-  quiet = TRUE
-)
+VB <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/braulio_carrillo_np.gpkg"), quiet = TRUE)
 
-transect <- st_read(
-  here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/transect.gpkg"),
-  quiet = TRUE
-)
+transect <- st_read(here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/transect.gpkg"), quiet = TRUE)
 
 transect <- transect %>%
   filter(tipo_acceso %in% c('sección fuera de trocha','transecto principal'))
@@ -56,18 +47,15 @@ transect <- transect %>%
 ggplot() +
   geom_sf(data = VB, aes(fill = nombre_asp), color = 'gray80') +
   geom_sf(data = la_selva, aes(fill = LANDUSE), color = 'gray80') +
-  geom_sf(data = transect, color = 'darkolivegreen1', linewidth = 2) +
+  geom_sf(data = transect, color = 'darkolivegreen1', linewidth = 1.2) +
   scale_fill_manual(
     values = c('gray95', 'gray90'),
-    labels = c("Braulio Carrillo National Park", "La Selva Biological Station")) +
+    labels = c("Braulio Carrillo National Park", "La Selva Biological Station")
+  ) +
   labs(fill = "") +
-  theme_void() +
-  theme(
-    legend.text = element_text(size = 12),
-    legend.key.spacing.y = unit(0.1, "cm")
-  )
-
+  theme_void()
 ```
+
 :::
 
 ::: {style="text-align:center"}
