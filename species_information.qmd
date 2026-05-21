@@ -5,26 +5,37 @@ format:
     page-layout: full
 ---
 
+<div id="shiny-container"></div>
+
 ```{=html}
 <script>
 
-const params = new URLSearchParams(window.location.search);
-const species = params.get("species");
+function renderIframe() {
 
-let shinyURL = "https://jbaljunas.shinyapps.io/species_data/";
+  const params = new URLSearchParams(window.location.search);
+  const species = params.get("species");
 
-if (species) {
-  shinyURL += "?species=" + encodeURIComponent(species);
+  let shinyURL = "https://jbaljunas.shinyapps.io/species_data/";
+
+  if (species) {
+    shinyURL += "?species=" + encodeURIComponent(species);
+  }
+
+  document.getElementById("shiny-container").innerHTML = `
+    <iframe
+      src="${shinyURL}"
+      width="100%"
+      height="900px"
+      style="border:none;">
+    </iframe>
+  `;
 }
 
-document.write(`
-<iframe
-  src="${shinyURL}"
-  width="100%"
-  height="900px"
-  style="border:none;">
-</iframe>
-`);
+// run once on load
+renderIframe();
+
+// OPTIONAL: update if URL changes (back/forward navigation)
+window.addEventListener("popstate", renderIframe);
 
 </script>
 ```
