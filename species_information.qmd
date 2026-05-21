@@ -10,7 +10,7 @@ format:
 ```{=html}
 <script>
 
-function renderIframe() {
+function renderIframeFromURL() {
 
   const params = new URLSearchParams(window.location.search);
   const species = params.get("species");
@@ -31,11 +31,11 @@ function renderIframe() {
   `;
 }
 
-// run once on load
-renderIframe();
+// initial load
+renderIframeFromURL();
 
-// OPTIONAL: update if URL changes (back/forward navigation)
-window.addEventListener("popstate", renderIframe);
+// whenever URL changes (important)
+window.addEventListener("popstate", renderIframeFromURL);
 
 </script>
 ```
