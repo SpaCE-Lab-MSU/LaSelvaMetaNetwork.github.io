@@ -62,6 +62,16 @@ server <- function(input, output, session){
     )
   })
   
+  # URL updates ONLY when user changes species
+  observeEvent(input$species, {
+    
+    updateQueryString(
+      paste0("?species=", URLencode(input$species)),
+      mode = "replace"
+    )
+    
+  }, ignoreInit = TRUE)
+  
   # -------------------------
   # 2. URL HANDLER (OVERWRITES ONLY IF PRESENT)
   # -------------------------
@@ -140,3 +150,4 @@ server <- function(input, output, session){
 }
 
 shinyApp(ui, server)
+
