@@ -10,27 +10,38 @@ format:
 Understanding tropical forest communities through species interactions
 :::
 
-
+<div>
+  
 ::: {style="text-align:center"}
 ## Overview
-:::
 
-Biotic interactions among species are fundamental drivers of tropical biodiversity, affecting species’ distributions, community assembly, and ecosystem functions and services such as seed dispersal and pollination. The tropics have an especially large gap in comprehensive occurrence and interaction data. Therefore, compiling and synthesizing these data is a critical step towards diligently tracking and predicting community change. This information is vital to identifying species and areas that are at especially high risk of climate change, guiding conservation and land management decisions. 
+
+**Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species’ distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
+
+<div> 
+
+*The tropics have an especially large gap in comprehensive occurrence and interaction data.* 
+
+<div>
+
+Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
+
+<div>
 
 ::: {.columns .v-center}
 
 ::: {.columns style="width:100%;"}
 
-::: {.column width="50%" .fade-in}
+::: {.column width="40%" .fade-in}
 
 
 ## The La Selva-Volcán Barva Transect
 
-As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Costa Rica provides **one of the best sources of ecological data in the tropics.**
+As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Heredia, Costa Rica provides **one of the best sources of ecological data in the tropics.**
 
 :::
 
-::: {.column width="50%" .fade-in}
+::: {.column width="60%" .fade-in}
 
 ```{r}
 #| echo: false
@@ -77,8 +88,18 @@ ggplot() +
 ```
 :::
 
+::: {.column width="50%" .fade-in}
+
+![](images/OTS.png)
+
+:::
+
+::: {.column width="50%" .fade-in}
+
+:::
+
 ::: {style="text-align:center"}
-## The MetaNetwork
+## Building the MetaNetwork
 :::
 
 A MetaNetwork includes both observed and potential interaction data that helps us understand how communities may be structured and function- more info coming soon!
