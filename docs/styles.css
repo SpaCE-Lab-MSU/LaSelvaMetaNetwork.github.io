@@ -54,9 +54,19 @@ main {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 952px) {
-  .card-column {
-    width: 100%;
-    display: block;
+/* Stack for phone screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .custom-stack {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+
+/* Side-by-side for laptops/desktop (min-width: 768px) */
+@media (min-width: 768px) {
+  .custom-stack {
+    display: flex;
+    flex-direction: row !important;
+    gap: 20px; /* Optional: Adds space between the columns */
   }
 }
