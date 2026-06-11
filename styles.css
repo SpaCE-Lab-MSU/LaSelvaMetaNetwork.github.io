@@ -54,19 +54,18 @@ main {
   border-radius: 4px;
 }
 
-/* Stack for phone screens (max-width: 767px) */
-@media (max-width: 767px) {
-  .custom-stack {
-    display: flex;
+/* Mobile layout */
+@media (max-width: 768px) {
+
+  .columns {
+    display: flex !important;
     flex-direction: column !important;
   }
-}
 
-/* Side-by-side for laptops/desktop (min-width: 768px) */
-@media (min-width: 768px) {
-  .custom-stack {
-    display: flex;
-    flex-direction: row !important;
-    gap: 20px; /* Optional: Adds space between the columns */
+  .column {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
+
 }

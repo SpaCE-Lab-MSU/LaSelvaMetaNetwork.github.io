@@ -22,8 +22,6 @@ Understanding tropical forest communities through species interactions
 
 Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
 
-:::: {.columns style="display: flex; justify-content: center; align-items: center;"}
-
 
 ::: {.column width="40%" .fade-in}
 ::: {.custom-box}
@@ -81,10 +79,10 @@ ggplot() +
 
 ```
 :::
-::::
 
 
-![](images/OTS.png)
+
+![](images/OTS.png){height=180px}
 
 
 ::: {.custom-box}
