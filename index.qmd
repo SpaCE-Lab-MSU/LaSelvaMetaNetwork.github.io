@@ -1,39 +1,43 @@
 ---
 title: "The La Selva-Barva MetaNetwork"
-format: 
+format:
   html:
     css: styles.css
     page-layout: full
 ---
 
 ::: {style="text-align:center"}
+
 Understanding tropical forest communities through species interactions
 
+:::
 
-<div>
+:::{style="text-align:center"}
 
 ## Overview
 
+**Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species' distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
 
-**Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species’ distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
-
-
-[*The tropics have an especially large gap in comprehensive occurrence and interaction data.*]{style="font-size: 130%;"}
+[*The tropics have an especially large gap in comprehensive occurrence and interaction data.*]{style="font-size:130%;"}
 
 Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
+:::
 
+:::: {.columns .transect-layout}
 
-::: {.column width="40%" .fade-in}
+::: {.column .left-panel}
+
 ::: {.custom-box}
 
 ## The La Selva-Volcán Barva Transect
 
-As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Heredia, Costa Rica provides **one of the best sources of ecological data in the tropics.**
-:::
+As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900 m elevational gradient in Heredia, Costa Rica provides **one of the best sources of ecological data in the tropics.**
+
 :::
 
+:::
 
-::: {.column width="60%" .fade-in}
+::: {.column .right-panel}
 
 ```{r}
 #| echo: false
@@ -42,7 +46,9 @@ As one of the best-preserved and most-studied elevational gradients in the tropi
 #| fig-width: 7
 #| fig-height: 5
 
-library(sf); library(ggplot2); library(tidyverse)
+library(sf)
+library(ggplot2)
+library(tidyverse)
 
 la_selva <- st_read(
   here::here("../LaSelva-MetaNetwork-data/data/L0/shapefiles/la_selva.gpkg"),
@@ -60,34 +66,56 @@ transect <- st_read(
 )
 
 transect <- transect %>%
-  filter(tipo_acceso %in% c('sección fuera de trocha','transecto principal'))
-
+  filter(
+    tipo_acceso %in% c(
+      "sección fuera de trocha",
+      "transecto principal"
+    )
+  )
 
 ggplot() +
-  geom_sf(data = VB, aes(fill = nombre_asp), color = 'gray80') +
-  geom_sf(data = la_selva, aes(fill = LANDUSE), color = 'gray80') +
-  geom_sf(data = transect, color = 'darkolivegreen1', linewidth = 2) +
+  geom_sf(
+    data = VB,
+    aes(fill = nombre_asp),
+    color = "gray80"
+  ) +
+  geom_sf(
+    data = la_selva,
+    aes(fill = LANDUSE),
+    color = "gray80"
+  ) +
+  geom_sf(
+    data = transect,
+    color = "darkolivegreen1",
+    linewidth = 2
+  ) +
   scale_fill_manual(
-    values = c('gray95', 'gray90'),
-    labels = c("Braulio Carrillo National Park", "La Selva Biological Station")) +
-  labs(fill = "") +
+    values = c("gray95", "gray90"),
+    labels = c(
+      "Braulio Carrillo National Park",
+      "La Selva Biological Station"
+    )
+  ) +
+  labs(fill = NULL) +
   theme_void() +
   theme(
     legend.text = element_text(size = 12),
     legend.key.spacing.y = unit(0.1, "cm")
   )
-
 ```
+
 :::
 
+::::
 
+::: {style="text-align:center"}
 
-![](images/OTS.png){height=180px}
+![](images/OTS.png)
 
+:::
 
 ::: {.custom-box}
 
 This research is made possible through the support of the Organization for Tropical Studies (OTS) at [La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/) and the work and dedication of their current and past researchers.
 
 :::
-
