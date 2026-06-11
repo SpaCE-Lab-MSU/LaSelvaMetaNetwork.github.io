@@ -22,19 +22,18 @@ Understanding tropical forest communities through species interactions
 
 Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
 
-::: {.columns .v-center}
+:::: {.columns style="display: flex; justify-content: center; align-items: center;"}
 
-::: {.columns style="width:100%;"}
 
 ::: {.column width="40%" .fade-in}
+::: {.custom-box}
 
-:::{.custom-box}
 ## The La Selva-Volcán Barva Transect
 
 As one of the best-preserved and most-studied elevational gradients in the tropics, this 2,900m elevational gradient in Heredia, Costa Rica provides **one of the best sources of ecological data in the tropics.**
 :::
-
 :::
+
 
 ::: {.column width="60%" .fade-in}
 
@@ -82,6 +81,7 @@ ggplot() +
 
 ```
 :::
+::::
 
 ::: {.column width="50%" .fade-in}
 
