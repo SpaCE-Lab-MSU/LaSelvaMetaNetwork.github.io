@@ -1,9 +1,12 @@
 ---
 title: "Team"
-format: html
+format:
+  html:
+    css: styles.css
+    page-layout: full
 ---
 
-## Jenna Baljunas
+## Jenna Baljunas <a href="https://orcid.org/0009-0001-7197-2654"><img src="images/ORCID-iD.png" alt="ORCID Logo"/></a>
 
 :::: {.columns}
 
@@ -13,4 +16,4 @@ format: html
 
 ::: {.column width="70%"}
 
-Hi! This project is part of my PhD dissertation at Michigan State University. There, I am in the [Spatial and Community Ecology (SpaCE) Lab](https://www.communityecologylab.com/), lead by Dr. Phoebe Zarnetske. 
+Hi! This project is part of my PhD dissertation at Michigan State University. There, I am part of the Department of Integrative Biology and Ecology, Evolution, & Behavior Program through the [Spatial and Community Ecology (SpaCE) Lab](https://www.communityecologylab.com/), lead by Dr. Phoebe Zarnetske.
