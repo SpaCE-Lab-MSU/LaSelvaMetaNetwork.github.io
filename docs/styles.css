@@ -65,3 +65,19 @@ a {
     box-sizing: border-box;
   }
 }
+
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-row img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 10px;
+}

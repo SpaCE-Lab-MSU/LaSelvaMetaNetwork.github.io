@@ -12,18 +12,19 @@ Data for this research are collected from a wide range of sources: from publishe
 
 :::
 
-:::: {.columns}
+::: {.image-row}
 
-::: {.column}
-![](images/ots_logo.jpg)
+<a href="https://tropicalstudies.org/binabitrop/">
+  <img src="images/ots_logo.jpg" width="200">
+</a>
+
+<a href="https://www.inaturalist.org/">
+  <img src="images/inat_logo.png" width="200">
+</a>
+
+<a href="https://www.gbif.org/">
+  <img src="images/gbif_logo.png" width="200">
+</a>
+
 :::
 
-::: {.column}
-![](images/inat_logo.png)
-:::
-
-::: {.column}
-![](images/gbif_logo.png)
-:::
-
-::::
