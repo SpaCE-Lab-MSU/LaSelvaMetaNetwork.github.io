@@ -18,17 +18,22 @@ Understanding tropical forest communities through species interactions
 ## Overview
 :::
 
+<br>
+
 :::: {.columns .transect-layout}
 
 ::: {.column .left-panel}
 
 ::: {.text-center}
-![](images/Tree_frog.jpg){width="80%" style="border-radius: 50%;"}
+![](images/Tree_frog.jpg){width="70%" style="border-radius: 50%;"}
 :::
 
 :::
 
 ::: {.column .right-panel}
+
+<br>
+
 **Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species' distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
 
 ::: {.custom-box}

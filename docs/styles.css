@@ -30,7 +30,6 @@ a {
 
 /* side-by-side content for wide screens */
 .transect-layout {
-  display: flex;
   align-items: center;
   gap: 3rem;
 }

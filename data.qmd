@@ -6,3 +6,8 @@ format:
     page-layout: full
 ---
 
+::: {style="text-align:center"}
+
+Data for this research are collected from a wide range of sources: from published studies, La Selva researchers themselves, databases, and fieldwork.
+
+:::
