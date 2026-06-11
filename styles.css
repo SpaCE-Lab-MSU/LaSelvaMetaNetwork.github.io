@@ -37,10 +37,12 @@ a {
 
 .left-panel {
   flex: 0 0 45%;
+  justify-content: center;
 }
 
 .right-panel {
   flex: 0 0 55%;
+  justify-content: center;
 }
 
 
