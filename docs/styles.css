@@ -53,3 +53,10 @@ main {
   padding: 15px;
   border-radius: 4px;
 }
+
+@media screen and (max-width: 952px) {
+  .card-column {
+    width: 100%;
+    display: block;
+  }
+}
