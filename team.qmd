@@ -8,12 +8,34 @@ format:
 
 ## Jenna Baljunas <a href="https://orcid.org/0009-0001-7197-2654"><img src="images/ORCID-iD.png" alt="ORCID Logo"/></a>
 
-:::: {.columns}
+:::: {.columns .transect-layout}
 
-::: {.column width="30%"}
-![](images/Bio_pic.JPG){width="90%"}
+::: {.column .left-panel}
+
+::: {.text-center}
+![](images/Bio_pic.JPG){width="70%"}
+
 :::
 
-::: {.column width="70%"}
+:::
+
+::: {.column .right-panel}
+
 
 Hi! This project is part of my PhD dissertation at Michigan State University. There, I am part of the Department of Integrative Biology and Ecology, Evolution, & Behavior Program through the [Spatial and Community Ecology (SpaCE) Lab](https://www.communityecologylab.com/), lead by Dr. Phoebe Zarnetske.
+
+<div class="image-row">
+
+  <a href="https://integrativebiology.natsci.msu.edu/" target="_blank">
+    <img src="images/IBIO_logo.png" width="200">
+  </a>
+
+  <a href="https://eeb.msu.edu/" target="_blank">
+    <img src="images/EEB_logo.jpg" width="200">
+  </a>
+
+</div>
+
+:::
+
+::::
