@@ -2,7 +2,7 @@
 
 /* body text size */
 body, p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* define bold font */
@@ -16,6 +16,9 @@ a {
 
 
 /* ----------- TEXT BOXES/ CONTENT FORMATTING -----------*/
+
+
+/* ----------- home page -----------*/
 
 /* custom text box */
 .custom-box {
@@ -67,6 +70,9 @@ a {
 }
 
 
+/* ----------- data synthesis page -----------*/
+
+/* side-by-side content for wide screens */
 .image-row {
   display: flex;
   gap: 1rem;
@@ -74,10 +80,26 @@ a {
   align-items: flex-start;
 }
 
+
 .image-row img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   object-position: center 40%;
   border-radius: 10px;
+}
+
+
+/* stacked content for small screens/phones */
+@media screen and (max-width: 952px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row img {
+    width: 200px;   /* optional: keep consistent size */
+    max-width: 90%;
+    height: auto;
+  }
 }
