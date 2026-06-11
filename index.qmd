@@ -18,7 +18,9 @@ Understanding tropical forest communities through species interactions
 
 **Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species' distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
 
+::: {.custom-box}
 [*The tropics have an especially large gap in comprehensive occurrence and interaction data.*]{style="font-size:130%;"}
+:::
 
 Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
 :::
@@ -115,7 +117,8 @@ ggplot() +
 :::
 
 ::: {.custom-box}
+::: {style="text-align:center"}
 
-This research is made possible through the support of the [Organization for Tropical Studies (OTS) at La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/), which includes the work and dedication of current and past researchers at La Selva.
-
+This research is made possible largely through the support of the Organization for Tropical Studies (OTS) at [La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/), which includes the work and dedication of their current and past researchers.
+:::
 :::

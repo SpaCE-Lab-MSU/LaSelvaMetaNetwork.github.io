@@ -1,3 +1,4 @@
+/* ----------- TEXT -----------*/
 
 /* body text size */
 body, p {
@@ -8,6 +9,13 @@ body, p {
 b, strong {
     font-weight: bold !important;
 }
+
+a {
+  color: #A2CD5A;
+}
+
+
+/* ----------- TEXT BOXES/ CONTENT FORMATTING -----------*/
 
 /* custom text box */
 .custom-box {
@@ -20,6 +28,7 @@ b, strong {
 }
 
 
+/* side-by-side content for wide screens */
 .transect-layout {
   display: flex;
   align-items: center;
@@ -35,6 +44,7 @@ b, strong {
 }
 
 
+/* stacked content for small screens/phones */
 @media screen and (max-width: 952px) {
 
   .transect-layout {
