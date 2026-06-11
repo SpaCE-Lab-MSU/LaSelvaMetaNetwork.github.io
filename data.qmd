@@ -11,3 +11,19 @@ format:
 Data for this research are collected from a wide range of sources: from published studies, La Selva researchers themselves, databases, and fieldwork.
 
 :::
+
+:::: {.columns}
+
+::: {.column}
+![](images/ots_logo.jpg)
+:::
+
+::: {.column}
+![](images/inat_logo.png)
+:::
+
+::: {.column}
+![](images/gbif_logo.png)
+:::
+
+::::

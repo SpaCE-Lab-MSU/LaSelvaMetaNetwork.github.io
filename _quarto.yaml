@@ -11,7 +11,7 @@ website:
       - href: index.qmd
         text: Home
       - href: data.qmd
-        text: Data Synthesis
+        text: "Data Synthesis"
       - text: "Species Lists"
         menu: 
           - href: plants.qmd

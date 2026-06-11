@@ -25,7 +25,7 @@ Understanding tropical forest communities through species interactions
 ::: {.column .left-panel}
 
 ::: {.text-center}
-![](images/Tree_frog.jpg){width="70%" style="border-radius: 50%;"}
+![](images/Tree_frog.jpg){width="90%" style="border-radius: 50%;"}
 :::
 
 :::
