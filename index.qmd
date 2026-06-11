@@ -143,6 +143,16 @@ ggplot() +
 <br>
 
 ::: {style="text-align:center"}
+## The Metanetwork
+:::
+
+::: {style="text-align:center"}
+A MetaNetwork includes both **observed** and **potential** interaction data that helps us understand how communities may be structured and function. 
+:::
+
+<br>
+
+::: {style="text-align:center"}
 
 ![](images/OTS.png)
 
@@ -151,6 +161,6 @@ ggplot() +
 ::: {.custom-box}
 ::: {style="text-align:center"}
 
-This research is made possible largely through the support of the Organization for Tropical Studies (OTS) at [La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/), which includes the work and dedication of their current and past researchers.
+This research is largely supported by the Organization for Tropical Studies (OTS) at [La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/), which includes the work and dedication of their current and past researchers.
 :::
 :::
