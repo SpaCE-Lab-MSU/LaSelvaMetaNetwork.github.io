@@ -38,24 +38,19 @@ b, strong {
 @media screen and (max-width: 952px) {
 
   .transect-layout {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column !important;
   }
 
   .left-panel,
   .right-panel {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 100%;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .custom-box {
-    width: 100%;
+    width: 100% !important;
     box-sizing: border-box;
   }
-}
-
-img[src*="OTS.png"] {
-  max-width: 250px;
-  width: 60%;
-  height: auto;
 }

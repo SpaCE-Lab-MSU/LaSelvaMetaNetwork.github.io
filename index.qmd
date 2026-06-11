@@ -116,6 +116,6 @@ ggplot() +
 
 ::: {.custom-box}
 
-This research is made possible through the support of the Organization for Tropical Studies (OTS) at [La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/) and the work and dedication of their current and past researchers.
+This research is made possible through the support of the [Organization for Tropical Studies (OTS) at La Selva Research Station](https://tropicalstudies.org/portfolio/la-selva-research-station/), which includes the work and dedication of current and past researchers at La Selva.
 
 :::
