@@ -32,7 +32,7 @@ a {
 .transect-layout {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .left-panel {

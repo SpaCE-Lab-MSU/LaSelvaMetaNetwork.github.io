@@ -10,20 +10,35 @@ format:
 
 Understanding tropical forest communities through species interactions
 
+<br>
+
 :::
 
-:::{style="text-align:center"}
-
 ## Overview
+:::: {.columns .transect-layout}
 
+::: {.column .left-panel}
+
+![](images/Tree_frog.jpg){style="border-radius: 50%;"}
+:::
+
+::: {.column .right-panel}
 **Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species' distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
 
 ::: {.custom-box}
 [*The tropics have an especially large gap in comprehensive occurrence and interaction data.*]{style="font-size:130%;"}
 :::
+:::
+
+::: {style="text-align:center"}
+<br>
 
 Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
 :::
+
+<br>
+
+::::
 
 :::: {.columns .transect-layout}
 
@@ -109,6 +124,8 @@ ggplot() +
 :::
 
 ::::
+
+<br>
 
 ::: {style="text-align:center"}
 
