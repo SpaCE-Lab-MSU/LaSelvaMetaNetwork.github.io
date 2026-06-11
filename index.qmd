@@ -3,7 +3,6 @@ title: "The La Selva-Barva MetaNetwork"
 format: 
   html:
     css: styles.css
-    page-layout: full
 ---
 
 ::: {style="text-align:center"}
@@ -90,13 +89,5 @@ ggplot() +
 :::
 
 ::: {.column width="50%" .fade-in}
-
-:::
-
-::: {style="text-align:center"}
-## Building the MetaNetwork
-:::
-
-A MetaNetwork includes both observed and potential interaction data that helps us understand how communities may be structured and function- more info coming soon!
 
 :::
