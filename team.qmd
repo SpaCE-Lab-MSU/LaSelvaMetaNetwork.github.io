@@ -22,7 +22,7 @@ format:
 ::: {.column .right-panel}
 
 
-Hi! This project is part of my PhD dissertation at Michigan State University. There, I am part of the Department of Integrative Biology and Ecology, Evolution, & Behavior Program through the [Spatial and Community Ecology (SpaCE) Lab](https://www.communityecologylab.com/), lead by Dr. Phoebe Zarnetske.
+Hi! This project is part of my PhD dissertation at Michigan State University. There, I am part of the Department of Integrative Biology and Ecology, Evolution, & Behavior Program through the [Spatial and Community Ecology (SpaCE) Lab](https://www.communityecologylab.com/), led by Dr. Phoebe Zarnetske.
 
 <div class="image-row">
 

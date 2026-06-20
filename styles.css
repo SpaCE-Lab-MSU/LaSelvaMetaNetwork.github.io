@@ -38,12 +38,12 @@ a {
 }
 
 .left-panel {
-  flex: 0 0 45%;
+  flex: 0 0 39%;
   justify-content: center;
 }
 
 .right-panel {
-  flex: 0 0 55%;
+  flex: 0 0 70%;
   justify-content: center;
 }
 
