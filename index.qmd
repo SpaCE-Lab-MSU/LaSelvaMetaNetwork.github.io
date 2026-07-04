@@ -1,15 +1,13 @@
 ---
 title: "The La Selva-Barva MetaNetwork"
+subtitle: "Understanding tropical forest communities through species interactions"
 format:
   html:
     css: styles.css
     page-layout: full
+title-block-banner: images/jungle_cropped.jpeg
 ---
-::: {style="text-align:center"}
 
-Understanding tropical forest communities through species interactions
-<br>
-:::
 
 :::: {.columns .transect-layout}
 

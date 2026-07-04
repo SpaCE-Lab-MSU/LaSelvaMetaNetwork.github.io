@@ -1,5 +1,15 @@
 /* ----------- TEXT -----------*/
 
+/* Title */
+.quarto-title-banner .title {
+  color: white;
+}
+
+/* Subtitle */
+.quarto-title-banner .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /* body text size */
 body, p {
   font-size: 25px;
