@@ -5,26 +5,25 @@ format:
     css: styles.css
     page-layout: full
 ---
-
 ::: {style="text-align:center"}
 
 Understanding tropical forest communities through species interactions
-
 <br>
-
-:::
-
-::: {style="text-align:center"}
-## Overview
 :::
 
 :::: {.columns .transect-layout}
 
+::: {.column .left-panel}
+::: {style="text-align:center"}
 
+## Overview
 
-::: {.column .left-panel} 
+**Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species' distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
 
+:::
+:::
 
+::: {.column .right-panel}
 <div style="
   width:350px;
   height:350px;
@@ -38,16 +37,15 @@ Understanding tropical forest communities through species interactions
               object-fit:cover;
               transform:scale(1.5) translate(-5px,-48px);">
 </div>
-
-
 :::
-
-::: {.column .right-panel}
-::: {style="text-align:center"}
 
 <br>
 
-**Biotic interactions** among species are fundamental drivers of tropical biodiversity, affecting **species' distributions, community assembly, and ecosystem functions and services**, such as seed dispersal and pollination.
+
+::: {.custom-box}
+::: {style="text-align:center"}
+
+[*The tropics have an especially large gap in comprehensive occurrence and interaction data.*]{style="font-size:100%;"}
 :::
 :::
 
@@ -55,27 +53,10 @@ Understanding tropical forest communities through species interactions
 
 
 
-<br>
 
 ::: {style="text-align:center"}
 
-[*The tropics have an especially large gap in comprehensive occurrence and interaction data.*]{style="font-size:130%;"}
-
-:::
-
-<hr style="
-  width:calc(100vw - 80px);
-  margin-left:calc(50% - 50vw + 40px);
-  border:none;
-  border-top:2px solid #A2CD5A;
-  margin-top:20px;
-  margin-bottom:20px;
-">
-
-
-::: {style="text-align:center"}
-
-
+<br> 
 Therefore, compiling and synthesizing these data is a critical step towards **diligently tracking and predicting community change.** This information is vital to identifying species and areas that are at especially high risk of climate change, guiding **conservation** and **land management decisions.**
 :::
 
