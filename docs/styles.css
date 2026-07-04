@@ -10,6 +10,17 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* Banner title */
+.quarto-title-banner .title {
+  font-size: 3.5rem;   /* adjust as desired */
+  font-weight: 700;
+}
+
+/* Banner subtitle */
+.quarto-title-banner .subtitle {
+  font-size: 1.6rem;
+}
+
 /* body text size */
 body, p {
   font-size: 25px;
