@@ -1,0 +1,346 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
+import background2 from "../assets/soltis.jpeg";
+import La_selva from "../assets/forest.jpeg";
+import seed_pred from "../assets/seed_pred.jpeg";
+import CB_pic from "../assets/CB.png";
+import REU_pic from "../assets/trees.JPG";
+import stream from "../assets/stream.png";
+---
+
+<BaseLayout title="Research">
+
+ <section class="relative -mt-[calc(4rem+2px)] min-h-[calc(100svh-2rem)] overflow-hidden border-b border-border/60 pt-[calc(4rem+2px)] sm:min-h-[100px]">
+    <Image
+      src={background2}
+      alt=""
+      class="absolute inset-0 h-full w-full object-cover object-[center_65%]"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      width={1600}
+      widths={[640, 960, 1280, 1600]}
+      sizes="100vw"
+      format="webp"
+      quality={50}
+    />
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.1_0.02_70_/_0.68),oklch(0.16_0.02_80_/_0.38)_46%,oklch(0.98_0.01_90_/_0.1))] dark:bg-[linear-gradient(90deg,oklch(0.08_0.01_70_/_0.78),oklch(0.08_0.01_70_/_0.52)_48%,oklch(0.08_0.01_70_/_0.18))]"
+    />
+    <div
+      aria-hidden="true"
+      class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/18 to-transparent"
+    />
+
+    <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[100px] sm:py-24">
+      <div class="max-w-4xl text-white drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
+        <h1 class="font-serif text-[2.5rem] font-medium leading-[1.02] sm:text-6xl lg:text-7xl">
+        Research
+        </h1>
+          <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
+          Explore some of my past and current projects below!
+          </p>
+      </div>
+    </div>
+  </section>
+
+<section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+      <article class="grid gap-10 lg:grid-cols-2">
+
+      {
+        La_selva && (
+          <Image
+            src={La_selva}
+            alt="La Selva"
+            class="mx-auto h-auto w-2/3 object-contain"
+            width={720}
+            widths={[372, 560, 720]}
+            sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
+            format="webp"
+            quality={64}
+          />
+        )
+      }
+
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+            The La Selva-Barva Metanetwork: Advancing understanding and prediction of climate vulnerability for tropical species and communities
+          </h2>
+
+          <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+             Biotic interactions play an especially important role in the structure and function of tropical forests. Species survival and distributions are changing under global climate change, leading to changes
+             in the interactions between species. For my PhD dissertation, I am investigating changes in the structure and function of ecological communities in Costa Rica along a 2,900m elevational gradient,
+             spanning {" "}
+            <a
+              href="https://tropicalstudies.org/portfolio/la-selva-research-station/"
+              class="underline decoration-gray-400/60 hover:decoration-gray-400"
+            > 
+            La Selva Biological Station
+            </a>
+            , Braulio Carrillo National Park, and Volcán Barva.
+          </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <a
+              href="https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/"
+              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
+            >
+              Project website
+              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+ </section>
+
+<section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+      <article class="grid gap-10 lg:grid-cols-2">
+
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+            The Scale-Dependent Relationships of Fruiting Plants and Frugivores in Tropical Andes Forests
+          </h2>
+
+          <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+             Plant-frugivore mutualisms are a major driver to biodiversity patterns in the tropics. However, most studies overlook such interactions in biodiversity assessments, by 
+             focusing on one metric of biodiversity (taxonomic diversity). In this study, I am analyzing patterns in spatial scale-dependent relationships of taxonomic and functional diversity 
+             for fruiting plants and frugivorous birds and mammals in the Tropical Andes to explore how multi-faceted and multi-scale approaches can improve conservation planning in biodiversity
+             hotspots.
+          </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <a
+              href=" "
+              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
+            >
+              (Manuscript in prep)
+              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+
+<section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+      <article class="grid gap-10 lg:grid-cols-2">
+
+      {
+        seed_pred && (
+          <Image
+            src={seed_pred}
+            alt="Seed Predation"
+            class="mx-auto h-auto w-2/3 object-contain"
+            width={720}
+            widths={[372, 560, 720]}
+            sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
+            format="webp"
+            quality={64}
+          />
+        )
+      }
+
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+            Seed Bank Predation as a Driver to Plant Population Dynamics
+          </h2>
+
+          <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+             Seed bank dynamics are important for the persistence of many herbaceous plant species in pyrogenic ecosystems. At {" "}
+            <a
+              href="https://www.archbold-station.org/programs/plant-ecology/"
+              class="underline decoration-gray-400/60 hover:decoration-gray-400"
+            > 
+            Archbold Biological Station
+            </a>
+            , I conducted a field study investigating the interplay between time-since-fire and the seed predation of five endemic plant species. 
+          </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <a
+              href=" "
+              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
+            >
+              (Manuscript in prep)
+              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+<section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+      <article class="grid gap-10 lg:grid-cols-2">
+
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+            Long-term Human Perturbations on the Chesapeake Bay
+          </h2>
+
+          <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+            I studied the salinatization and alkalinization of freshwater within the Chesapeake Bay watershed utilizing the {" "}
+            <a
+              href="https://datahub.chesapeakebay.net/"
+              class="underline decoration-gray-400/60 hover:decoration-gray-400"
+            >
+            EPA Chesapeake Bay Program water quality monitoring network
+            </a>
+            .
+          </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <a
+              href="https://link.springer.com/article/10.1007/s10533-025-01219-6"
+              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
+            >
+              Read "Freshwater faces a warmer and saltier future from headwaters to coasts: climate risks, saltwater intrusion, and biogeochemical chain reactions"
+              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </p>
+        </div>
+
+        {
+      CB_pic && (
+        <Image
+          src={CB_pic}
+          alt="CB"
+          class="mx-auto h-auto w-full object-contain"
+          width={1200}
+          widths={[640, 960, 1200]}
+          sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
+          format="webp"
+          quality={64}
+        />
+      )
+    }
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+ <section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+      <article class="grid gap-10 lg:grid-cols-2">
+
+      {
+        REU_pic && (
+          <Image
+            src={REU_pic}
+            alt="REU"
+            class="mx-auto h-auto w-2/3 object-contain"
+            width={720}
+            widths={[372, 560, 720]}
+            sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
+            format="webp"
+            quality={64}
+          />
+        )
+      }
+
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+            Soil Characteristic Response with Trees to Topographic Variation in a Premontane Rainforest
+          </h2>
+
+          <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+            Under Texas A&M's {" "}
+            <a
+              href="https://costaricareu.tamu.edu/"
+              class="underline decoration-gray-400/60 hover:decoration-gray-400"
+            >
+            "Ecohydrology of Tropical Montane Forests – Diversity in Science, Interdisciplinary Breadth, and Global Awareness" NSF-REU
+            </a>
+            , I studied the relationships between topography, soil characteristics, and tree presence and distribution using spatial mapping in a Costa Rican rainforest. 
+          </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <a
+              href="https://ui.adsabs.harvard.edu/abs/2023AGUFM.B13K2058B/abstract"
+              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
+            >
+              See project abstract
+              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+<section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+      <article class="grid gap-10 lg:grid-cols-2">
+
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+            Mesohabitat Affinities of Benthic Macroinvertebrates in Protected Lowland Rainforest Streams
+          </h2>
+
+          <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+            I quantified changes in community structure of macroinvertebrate species and functional feeding groups across stream mesohabitats (pools, glides, riffles, and rapids)
+            in southeastern Nicaragua to inform biomonitoring and conservation efforts in a region with rapidly degrading aquatic ecosystems.
+          </p>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <a
+              href="https://www.journals.uchicago.edu/doi/full/10.1086/733242?casa_token=VfEqCoJfcGQAAAAA%3A19LlunPIchCeAtdldBLwpI2RPwx-sV1UbG4SroT5mUEi5QaNSW_9jNlmSXDONDBHDFiL82UkZWI"
+              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
+            >
+              Read "Mesohabitat affinities of benthic macroinvertebrates in protected lowland rainforest streams of southeast Nicaragua"
+              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </p>
+        </div>
+
+        {
+      stream && (
+        <Image
+          src={stream}
+          alt="Stream"
+          class="mx-auto h-auto w-2/3 object-contain"
+          width={720}
+          widths={[372, 560, 720]}
+          sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
+          format="webp"
+          quality={64}
+        />
+      )
+    }
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+</BaseLayout>
+
+

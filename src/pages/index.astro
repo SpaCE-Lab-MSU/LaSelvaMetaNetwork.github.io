@@ -1,0 +1,199 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/Icon.astro";
+import background from "../assets/bats.JPG";
+import BioPic from "../assets/Bio_pic.JPG";
+import IBIO from "../assets/IBIO_logo.png";
+import EEB from "../assets/EEB_logo.jpg";
+import {
+  SITE,
+  categories,
+  featuredPost,
+  sortedPosts,
+  getAuthor,
+  getCategory,
+  formatDate,
+} from "../lib/blog-data.js";
+
+const featured = await featuredPost();
+const featuredAuthor = getAuthor(featured.author);
+const featuredCategory = getCategory(featured.category);
+const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slug);
+---
+
+<BaseLayout
+  title={`${SITE.name}`}
+  description={SITE.description}
+  canonical="/"
+  flushFooter
+>
+  <section class="relative -mt-[calc(4rem+2px)] min-h-[calc(100svh-2rem)] overflow-hidden border-b border-border/60 pt-[calc(4rem+2px)] sm:min-h-[760px]">
+    <Image
+      src={background}
+      alt=""
+      class="absolute inset-0 h-full w-full object-cover object-right"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      width={1600}
+      widths={[640, 960, 1280, 1600]}
+      sizes="100vw"
+      format="webp"
+      quality={50}
+    />
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.1_0.02_70_/_0.68),oklch(0.16_0.02_80_/_0.38)_46%,oklch(0.98_0.01_90_/_0.1))] dark:bg-[linear-gradient(90deg,oklch(0.08_0.01_70_/_0.78),oklch(0.08_0.01_70_/_0.52)_48%,oklch(0.08_0.01_70_/_0.18))]"
+    />
+    <div
+      aria-hidden="true"
+      class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/18 to-transparent"
+    />
+
+    <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[680px] sm:py-24">
+      <div class="max-w-4xl text-white drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
+        <h1 class="font-serif text-[2.5rem] font-medium leading-[1.02] sm:text-6xl lg:text-7xl">
+        I study the structure and change of ecological communities
+        </h1>
+        <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
+        Currently, I am using species interaction and occurrence data to build species interaction networks in Costa Rica to understand how communities are responding to climate change.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <a
+            href="https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/"
+            class="group inline-flex items-center gap-2 border-b border-white pb-1 text-sm font-medium text-white hover:border-white/70 hover:text-white/82"
+          >
+            See the La Selva - Barva MetaNetwork
+            <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="border-b border-border/60">
+  <div class="mx-auto max-w-6xl px-5 py-16">
+
+    <article class="grid gap-10 lg:grid-cols-2">
+
+      {
+        BioPic && (
+          <Image
+            src={BioPic}
+            alt="Jenna Baljunas"
+            class="mx-auto h-auto w-2/3 object-contain"
+            width={720}
+            widths={[372, 560, 720]}
+            sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
+            format="webp"
+            quality={64}
+          />
+        )
+      }
+
+      <div class="flex flex-col justify-center">
+        <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+          About me
+        </h2>
+
+        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+
+            Hi, I'm Jenna! Right now, I'm a PhD student in the{" "}
+          <a
+            href="https://www.communityecologylab.com/"
+            class="underline decoration-gray-400/60 hover:decoration-gray-400"
+          >
+            Spatial and Community Ecology (SpaCE) Lab
+          </a>{" "}
+          and a member of the{" "}
+          <a
+            href="https://integrativebiology.natsci.msu.edu/"
+            class="underline decoration-gray-400/60 hover:decoration-gray-400"
+          >
+            Department of Integrative Biology
+          </a>{" "}
+          and the{" "}
+          <a
+            href="https://eeb.msu.edu/"
+            class="underline decoration-gray-400/60 hover:decoration-gray-400"
+          >
+            Ecology, Evolution, and Behavior Program
+          </a> at Michigan State University.
+      </p>
+
+       <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+
+          How species interact with each other and the environment around them has always been an interest of mine. My first experiences in community ecology were based in tropical systems, 
+          which not only taught me how important species interactions are to the stability and function in these regions but also started a growing passion for me to help fill large gaps in our knowledge of tropical biodiversity.
+
+        </p>
+
+        <div class="mt-8 flex items-center justify-center gap-9">
+          <a
+            href="https://integrativebiology.natsci.msu.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={IBIO}
+              alt="IBIO"
+              class="h-40 w-40 rounded-full object-cover transition-opacity hover:opacity-75"
+            />
+          </a>
+
+          <a
+            href="https://eeb.msu.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={EEB}
+              alt="EEB"
+              class="h-40 w-40 rounded-full object-cover transition-opacity hover:opacity-75"
+            />
+          </a>
+        </div>
+      </div>
+
+    </article>
+  </div>
+</section>
+
+
+
+</BaseLayout>
+
+<script>
+  const latest = document.querySelector("[data-home-latest]");
+  if (latest) {
+    const buttons = [...latest.querySelectorAll("[data-home-filter]")];
+    const cards = [...latest.querySelectorAll("[data-post-card]")];
+    const empty = latest.querySelector("[data-home-empty]");
+    const activeClasses = ["border-foreground", "bg-foreground", "text-background"];
+    const inactiveClasses = ["border-border", "text-muted-foreground", "hover:text-foreground"];
+
+    const setActive = (button, active) => {
+      button.classList.toggle(activeClasses[0], active);
+      button.classList.toggle(activeClasses[1], active);
+      button.classList.toggle(activeClasses[2], active);
+      inactiveClasses.forEach((className) => button.classList.toggle(className, !active));
+    };
+
+    const filterCards = (category) => {
+      let visible = 0;
+      cards.forEach((card) => {
+        const match = !category || card.dataset.category === category;
+        const show = match && visible < 6;
+        card.hidden = !show;
+        if (match) visible += 1;
+      });
+      if (empty) empty.hidden = visible > 0;
+      buttons.forEach((button) => setActive(button, button.dataset.homeFilter === category));
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => filterCards(button.dataset.homeFilter || ""));
+    });
+  }
+</script>
