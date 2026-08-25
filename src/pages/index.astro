@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Icon from "../components/Icon.astro";
-import background from "../assets/bats.JPG";
+import background from "../assets/Tree_frog.jpg";
 import BioPic from "../assets/Bio_pic.JPG";
 import IBIO from "../assets/IBIO_logo.png";
 import EEB from "../assets/EEB_logo.jpg";
@@ -54,20 +54,11 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
     <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[680px] sm:py-24">
       <div class="max-w-4xl text-white drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
         <h1 class="font-serif text-[2.5rem] font-medium leading-[1.02] sm:text-6xl lg:text-7xl">
-        I study the structure and change of ecological communities
+        Welcome to the La Selva-Barva MetaNetwork!
         </h1>
         <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
-        Currently, I am using species interaction and occurrence data to build species interaction networks in Costa Rica to understand how communities are responding to climate change.
+        This project uses species interactions, occurrences, and traits to study tropical communities
         </p>
-        <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-          <a
-            href="https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/"
-            class="group inline-flex items-center gap-2 border-b border-white pb-1 text-sm font-medium text-white hover:border-white/70 hover:text-white/82"
-          >
-            See the La Selva - Barva MetaNetwork
-            <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-          </a>
-        </div>
       </div>
     </div>
   </section>
