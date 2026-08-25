@@ -3,10 +3,13 @@ import mdx from "@astrojs/mdx";
 import tailwindcss from "@tailwindcss/vite";
 
 const site =
-  process.env.SITE_URL || process.env.PUBLIC_SITE_URL || "https://quietpages-eta.vercel.app";
+  process.env.SITE_URL ||
+  process.env.PUBLIC_SITE_URL ||
+  "https://space-lab-msu.github.io";
 
 export default defineConfig({
-  site: "https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/",
+  site,
+  base: "/LaSelvaMetaNetwork.github.io/",
   integrations: [mdx()],
   vite: {
     plugins: [tailwindcss()],
