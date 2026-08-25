@@ -28,7 +28,7 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
   canonical="/"
   flushFooter
 >
-  <section class="relative -mt-[calc(4rem+2px)] min-h-[calc(100svh-2rem)] overflow-hidden border-b border-border/60 pt-[calc(4rem+2px)] sm:min-h-[760px]">
+  <section class="relative -mt-[calc(4rem+2px)] min-h-[calc(100svh-2rem)] overflow-hidden border-b border-border/60 pt-[calc(4rem+2px)] sm:min-h-[300px]">
     <Image
       src={background}
       alt=""
@@ -51,14 +51,11 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
       class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/18 to-transparent"
     />
 
-    <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[680px] sm:py-24">
+    <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[300px] sm:py-24">
       <div class="max-w-4xl text-white drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
         <h1 class="font-serif text-[2.5rem] font-medium leading-[1.02] sm:text-6xl lg:text-7xl">
-        Welcome to the La Selva-Barva MetaNetwork!
+        Welcome to the La Selva MetaNetwork!
         </h1>
-        <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
-        This project uses species interactions, occurrences, and traits to study tropical communities
-        </p>
       </div>
     </div>
   </section>
