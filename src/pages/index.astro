@@ -70,22 +70,7 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
 <section class="border-b border-border/60">
   <div class="mx-auto max-w-6xl px-5 py-16">
 
-    <article class="grid gap-10 lg:grid-cols-2">
-
-      {
-        BioPic && (
-          <Image
-            src={BioPic}
-            alt="Jenna Baljunas"
-            class="mx-auto h-auto w-2/3 object-contain"
-            width={720}
-            widths={[372, 560, 720]}
-            sizes="(min-width: 1024px) 560px, calc(100vw - 40px)"
-            format="webp"
-            quality={64}
-          />
-        )
-      }
+    <article class="grid gap-10 lg:grid-cols-1">
 
       <div class="flex flex-col justify-center">
         <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
@@ -94,7 +79,7 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
 
         <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
 
-        First, a <strong>MetaNetwork</strong> is a set of potential interactions within a pre-defined region based on knowledge of interactions that have been observed there,
+        First, a <strong>metanetwork</strong> is a set of potential interactions within a pre-defined region based on knowledge of interactions that have been observed there,
         as well as could be observed based on the species present.
 
       </p>
