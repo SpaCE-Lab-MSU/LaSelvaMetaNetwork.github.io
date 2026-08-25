@@ -2,8 +2,7 @@
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Icon from "../components/Icon.astro";
-import background2 from "../assets/soltis.jpeg";
-import La_selva from "../assets/forest.jpeg";
+import Bio_pic from "../assets/Bio_pic.JPG";
 import seed_pred from "../assets/seed_pred.jpeg";
 import CB_pic from "../assets/CB.png";
 import REU_pic from "../assets/trees.JPG";
@@ -13,36 +12,11 @@ import stream from "../assets/stream.png";
 <BaseLayout title="Meet the Team">
 
  <section class="relative -mt-[calc(4rem+2px)] min-h-[calc(100svh-2rem)] overflow-hidden border-b border-border/60 pt-[calc(4rem+2px)] sm:min-h-[100px]">
-    <Image
-      src={background2}
-      alt=""
-      class="absolute inset-0 h-full w-full object-cover object-[center_65%]"
-      loading="eager"
-      fetchpriority="high"
-      decoding="async"
-      width={1600}
-      widths={[640, 960, 1280, 1600]}
-      sizes="100vw"
-      format="webp"
-      quality={50}
-    />
-    <div
-      aria-hidden="true"
-      class="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.1_0.02_70_/_0.68),oklch(0.16_0.02_80_/_0.38)_46%,oklch(0.98_0.01_90_/_0.1))] dark:bg-[linear-gradient(90deg,oklch(0.08_0.01_70_/_0.78),oklch(0.08_0.01_70_/_0.52)_48%,oklch(0.08_0.01_70_/_0.18))]"
-    />
-    <div
-      aria-hidden="true"
-      class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/18 to-transparent"
-    />
-
     <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[100px] sm:py-24">
-      <div class="max-w-4xl text-white drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
+      <div class="max-w-4xl text-black drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
         <h1 class="font-serif text-[2.5rem] font-medium leading-[1.02] sm:text-6xl lg:text-7xl">
-        Research
+        Meet the team!
         </h1>
-          <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
-          Explore some of my past and current projects below!
-          </p>
       </div>
     </div>
   </section>
@@ -52,10 +26,10 @@ import stream from "../assets/stream.png";
       <article class="grid gap-10 lg:grid-cols-2">
 
       {
-        La_selva && (
+        Bio_pic && (
           <Image
-            src={La_selva}
-            alt="La Selva"
+            src={Bio_pic}
+            alt="Jenna"
             class="mx-auto h-auto w-2/3 object-contain"
             width={720}
             widths={[372, 560, 720]}
@@ -68,31 +42,39 @@ import stream from "../assets/stream.png";
 
         <div class="flex flex-col justify-center">
           <h2 class="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
-            The La Selva-Barva Metanetwork: Advancing understanding and prediction of climate vulnerability for tropical species and communities
+            Jenna Baljunas
           </h2>
 
           <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
-             Biotic interactions play an especially important role in the structure and function of tropical forests. Species survival and distributions are changing under global climate change, leading to changes
-             in the interactions between species. For my PhD dissertation, I am investigating changes in the structure and function of ecological communities in Costa Rica along a 2,900m elevational gradient,
-             spanning {" "}
-            <a
-              href="https://tropicalstudies.org/portfolio/la-selva-research-station/"
-              class="underline decoration-gray-400/60 hover:decoration-gray-400"
-            > 
-            La Selva Biological Station
-            </a>
-            , Braulio Carrillo National Park, and Volcán Barva.
+             Hi, I'm Jenna! The La Selva MetaNetwork is part of my PhD dissertation. I'm a PhD student in the{" "}
+          <a
+            href="https://www.communityecologylab.com/"
+            class="underline decoration-gray-400/60 hover:decoration-gray-400"
+          >
+            Spatial and Community Ecology (SpaCE) Lab
+          </a>{" "}
+          and a member of the{" "}
+          <a
+            href="https://integrativebiology.natsci.msu.edu/"
+            class="underline decoration-gray-400/60 hover:decoration-gray-400"
+          >
+            Department of Integrative Biology
+          </a>{" "}
+          and the{" "}
+          <a
+            href="https://eeb.msu.edu/"
+            class="underline decoration-gray-400/60 hover:decoration-gray-400"
+          >
+            Ecology, Evolution, and Behavior Program
+          </a> at Michigan State University.
+      </p>
+
+       <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
+
+          How species interact with each other and the environment around them has always been an interest of mine. My first experiences in community ecology were based in tropical systems, 
+          which not only taught me how important species interactions are to the stability and function in these regions but also started a growing passion for me to help fill large gaps in our knowledge of tropical biodiversity.
           </p>
 
-        <p class="mt-4 text-lg leading-relaxed text-muted-foreground">
-          <a
-              href="https://space-lab-msu.github.io/LaSelvaMetaNetwork.github.io/"
-              class="group inline-flex items-center gap-2 border-b border-black pb-1 text-sm font-medium text-black hover:border-black/70 hover:text-black/82"
-            >
-              Project website
-              <Icon name="arrow-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-            </a>
-          </p>
         </div>
 
       </article>
