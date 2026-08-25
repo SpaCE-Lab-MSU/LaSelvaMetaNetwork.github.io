@@ -29,27 +29,6 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
   flushFooter
 >
   <section class="relative -mt-[calc(4rem+2px)] min-h-[calc(100svh-2rem)] overflow-hidden border-b border-border/60 pt-[calc(4rem+2px)] sm:min-h-[400px]">
-    <Image
-      src={background}
-      alt=""
-      class="absolute inset-0 h-full w-full object-cover object-right"
-      loading="eager"
-      fetchpriority="high"
-      decoding="async"
-      width={1600}
-      widths={[640, 960, 1280, 1600]}
-      sizes="100vw"
-      format="webp"
-      quality={50}
-    />
-    <div
-      aria-hidden="true"
-      class="absolute inset-0 bg-[linear-gradient(90deg,oklch(0.1_0.02_70_/_0.68),oklch(0.16_0.02_80_/_0.38)_46%,oklch(0.98_0.01_90_/_0.1))] dark:bg-[linear-gradient(90deg,oklch(0.08_0.01_70_/_0.78),oklch(0.08_0.01_70_/_0.52)_48%,oklch(0.08_0.01_70_/_0.18))]"
-    />
-    <div
-      aria-hidden="true"
-      class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/45 via-black/18 to-transparent"
-    />
 
     <div class="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-6xl items-center px-5 py-20 sm:min-h-[400px] sm:py-24">
       <div class="max-w-4xl text-white drop-shadow-[0_1px_18px_rgba(0,0,0,0.28)]">
@@ -58,9 +37,6 @@ const latest = (await sortedPosts()).filter((post) => post.slug !== featured.slu
         </h1>
         <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
         Important <strong>ecological functions</strong>, such as pollination and seed dispersal, are based on the <strong>interactions</strong> between species.
-        </p>
-
-        <p class="mt-8 max-w-xl text-lg leading-relaxed text-white/86">
         Species interactions are the foundation of the vast biodiversity of the tropics, affecting species distributions and community assembly.
         </p>
       </div>
